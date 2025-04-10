@@ -2,6 +2,8 @@
 
 Une solution moderne de gestion hospitalière intégrant l'intelligence artificielle pour optimiser les opérations et améliorer la qualité des soins.
 
+🌐 [Voir la démo en ligne](https://mouliom2.github.io/hopital-askamoul/)
+
 ## Fonctionnalités
 
 - **Gestion des rendez-vous**
