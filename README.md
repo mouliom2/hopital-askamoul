@@ -91,6 +91,23 @@ Les contributions sont les bienvenues ! Pour contribuer :
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrir une Pull Request
 
+## 👥 Contributeurs
+
+### Réalisateur & Développeur Principal
+- [Mouliom Djidere Askanda](https://github.com/mouliom2)
+  - Chef de Projet
+  - Développement Frontend & Backend
+  - Intégration IA
+  - Design & UX
+
+### Encadrement
+- **Mr. IVAN**
+  - Supervision du projet
+  - Conseils techniques
+  - Validation des fonctionnalités
+
+_Ce projet a été réalisé dans le cadre de [Votre Institution/École]_
+
 ## Licence
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
