@@ -106,7 +106,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
   - Conseils techniques
   - Validation des fonctionnalités
 
-_Ce projet a été réalisé dans le cadre de [Votre Institution/École]_
+_Ce projet a été réalisé dans le cadre de la formation en Science des Données et Intelligence Artificielle (SDIA) à l'École Nationale Supérieure Polytechnique de Douala (ENSPD)._
 
 ## Licence
 
