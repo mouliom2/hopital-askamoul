@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hôpital Askamoul - Présentation du Projet</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --text: #1f2937;
+            --background: #ffffff;
+            --accent: #dbeafe;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background);
+            color: var(--text);
+        }
+
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            display: none;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide-content {
+            max-width: 1000px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: var(--secondary);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .feature-item {
+            background: var(--accent);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: left;
+        }
+
+        .feature-item h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .tech-item {
+            background: var(--accent);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background: var(--secondary);
+        }
+
+        .slide-number {
+            position: fixed;
+            bottom: 1rem;
+            left: 1rem;
+            font-size: 0.875rem;
+            color: var(--text);
+            opacity: 0.5;
+        }
+
+        .screenshot {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Slide 1: Page de titre -->
+    <div class="slide active" id="slide1">
+        <div class="slide-content">
+            <h1>Hôpital Askamoul</h1>
+            <h2>Plateforme de Gestion Intelligente</h2>
+            <p style="font-size: 1.25rem; margin-top: 2rem;">
+                Une solution moderne pour la gestion hospitalière intégrant l'intelligence artificielle
+            </p>
+        </div>
+    </div>
+
+    <!-- Slide 2: Vue d'ensemble -->
+    <div class="slide" id="slide2">
+        <div class="slide-content">
+            <h2>Vue d'ensemble du projet</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Objectif</h3>
+                    <p>Moderniser la gestion hospitalière en intégrant des fonctionnalités d'IA pour améliorer l'efficacité et la qualité des soins.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Public cible</h3>
+                    <p>Personnel médical, administratif et de direction de l'hôpital.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Innovation</h3>
+                    <p>Utilisation de l'IA pour l'optimisation des ressources et l'aide à la décision médicale.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Fonctionnalités principales -->
+    <div class="slide" id="slide3">
+        <div class="slide-content">
+            <h2>Fonctionnalités principales</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Gestion des patients</h3>
+                    <ul>
+                        <li>Dossiers médicaux électroniques</li>
+                        <li>Suivi des consultations</li>
+                        <li>Historique médical</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Planification intelligente</h3>
+                    <ul>
+                        <li>Rendez-vous automatisés</li>
+                        <li>Optimisation des horaires</li>
+                        <li>Gestion des urgences</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Analyse prédictive</h3>
+                    <ul>
+                        <li>Prévision des admissions</li>
+                        <li>Analyse des risques</li>
+                        <li>Recommandations de traitement</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Assistant IA</h3>
+                    <ul>
+                        <li>Aide au diagnostic</li>
+                        <li>Support décisionnel</li>
+                        <li>Interaction en langage naturel</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Architecture technique -->
+    <div class="slide" id="slide4">
+        <div class="slide-content">
+            <h2>Architecture technique</h2>
+            <div class="tech-stack">
+                <div class="tech-item">Frontend: HTML/CSS/JavaScript</div>
+                <div class="tech-item">Backend: FastAPI</div>
+                <div class="tech-item">Base de données: PostgreSQL</div>
+                <div class="tech-item">IA: TensorFlow</div>
+                <div class="tech-item">ML: Scikit-learn</div>
+                <div class="tech-item">Analyse: Pandas</div>
+            </div>
+            <div class="feature-grid" style="margin-top: 2rem;">
+                <div class="feature-item">
+                    <h3>Frontend moderne</h3>
+                    <p>Interface utilisateur intuitive et responsive avec des composants réutilisables.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Backend robuste</h3>
+                    <p>API REST sécurisée avec authentification JWT et validation des données.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>IA avancée</h3>
+                    <p>Modèles d'apprentissage profond pour l'analyse prédictive et l'aide au diagnostic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Interface utilisateur -->
+    <div class="slide" id="slide5">
+        <div class="slide-content">
+            <h2>Interface utilisateur</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Design moderne</h3>
+                    <ul>
+                        <li>Interface épurée et professionnelle</li>
+                        <li>Navigation intuitive</li>
+                        <li>Responsive design</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Tableaux de bord</h3>
+                    <ul>
+                        <li>Vue d'ensemble des activités</li>
+                        <li>Statistiques en temps réel</li>
+                        <li>Indicateurs de performance</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Gestion des rendez-vous</h3>
+                    <ul>
+                        <li>Calendrier interactif</li>
+                        <li>Planification simplifiée</li>
+                        <li>Notifications automatiques</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Sécurité et conformité -->
+    <div class="slide" id="slide6">
+        <div class="slide-content">
+            <h2>Sécurité et conformité</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Protection des données</h3>
+                    <ul>
+                        <li>Chiffrement des données sensibles</li>
+                        <li>Authentification sécurisée</li>
+                        <li>Journalisation des accès</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Conformité réglementaire</h3>
+                    <ul>
+                        <li>Respect des normes de santé</li>
+                        <li>Protection de la vie privée</li>
+                        <li>Traçabilité des actions</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Sauvegarde et récupération</h3>
+                    <ul>
+                        <li>Backup automatique</li>
+                        <li>Plan de reprise d'activité</li>
+                        <li>Haute disponibilité</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Conclusion -->
+    <div class="slide" id="slide7">
+        <div class="slide-content">
+            <h2>Conclusion</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Bénéfices</h3>
+                    <ul>
+                        <li>Amélioration de l'efficacité opérationnelle</li>
+                        <li>Réduction des erreurs médicales</li>
+                        <li>Optimisation des ressources</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Impact</h3>
+                    <ul>
+                        <li>Meilleure qualité des soins</li>
+                        <li>Satisfaction accrue des patients</li>
+                        <li>Environnement de travail optimisé</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Perspectives</h3>
+                    <ul>
+                        <li>Évolution continue</li>
+                        <li>Nouvelles fonctionnalités IA</li>
+                        <li>Extension à d'autres établissements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button onclick="previousSlide()">Précédent</button>
+        <button onclick="nextSlide()">Suivant</button>
+    </div>
+
+    <div class="slide-number"></div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function updateSlideNumber() {
+            document.querySelector('.slide-number').textContent = `${currentSlide}/${totalSlides}`;
+        }
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            document.getElementById(`slide${slideNumber}`).classList.add('active');
+            currentSlide = slideNumber;
+            updateSlideNumber();
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                showSlide(currentSlide + 1);
+            }
+        }
+
+        function previousSlide() {
+            if (currentSlide > 1) {
+                showSlide(currentSlide - 1);
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                previousSlide();
+            }
+        });
+
+        updateSlideNumber();
+    </script>
+</body>
+</html>
